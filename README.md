@@ -147,5 +147,5 @@ This section will walk through the R code provided.  Comments are also located w
 16.  The table was written to file.
 ```
     #write tabel to file
-    write.table(summaryData,"tidydata.txt")
+    write.table(summaryData,"tidydata.txt", row.name=FALSE)
 ```

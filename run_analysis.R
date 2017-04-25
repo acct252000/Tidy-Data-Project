@@ -51,7 +51,7 @@ xPlrData<-select(xPlrData,-activitycode)
 #summarize to arrive at mean of each item by subject number and activity name
 summaryData<-summarise_each(xPlrData,funs(mean))
 #write tabel to file
-write.table(summaryData,"tidydata.txt")
+write.table(summaryData,"tidydata.txt", row.name=FALSE)
 
 
 
